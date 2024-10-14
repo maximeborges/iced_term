@@ -37,7 +37,7 @@ pub fn term_view(term: &Term) -> Element<'_, Event> {
 }
 
 impl<'a> TermView<'a> {
-    fn new(term: &'a Term) -> Self {
+    pub fn new(term: &'a Term) -> Self {
         Self { term }
     }
 
