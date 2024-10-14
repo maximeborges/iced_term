@@ -64,6 +64,7 @@ impl Application for App {
             theme: iced_term::ColorPalette::default(),
             backend: iced_term::BackendSettings {
                 shell: system_shell.to_string(),
+                ..Default::default()
             },
         };
 
